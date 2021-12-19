@@ -1,7 +1,6 @@
 import { sliceState, Folder } from "./types";
-import { Action } from '@reduxjs/toolkit';
 
-export function addFolderItems(state: sliceState, payload : Action<Folder>) {
+export function addFolderItems(state: sliceState, payload : Folder) {
   return {
     ...state,
     payload
