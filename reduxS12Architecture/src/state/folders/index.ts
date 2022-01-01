@@ -8,6 +8,8 @@ import { Folder } from './types';
 // make sure action name is same as reducer name
 const reducer = createReducer(initialState, (builder)=> {
   // do stuff
+  // addCase(action, reducer)
+  builder.addCase(folderAct.addFolderItemAction, reducerFns.addFolderItems);
 });
 
 export { reducer, folderSelector, folderAct };

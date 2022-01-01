@@ -1,8 +1,10 @@
+import { PayloadAction } from "@reduxjs/toolkit";
 import { sliceState, Folder } from "./types";
 
-export function addFolderItems(state: sliceState, payload : Folder) {
+export const addFolderItems = (state: sliceState, action:PayloadAction<Folder>) => {
+  const newFolder: Folder = action.payload;
   return {
     ...state,
-    payload
+    newFolder
   }
 }
