@@ -2,7 +2,7 @@ import React, {useState}from 'react';
 import './App.css';
 import Folder from './components/folders/Folder';
 import Renderer from './components/Renderer';
-import reduxStore from './state/index';
+import reduxStore from './state/configure-store';
 import { Provider, useSelector } from 'react-redux';
 import { RootState } from './state/reducers';
 import Sidebar from './components/sidebar/Sidebar';
@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Provider store={reduxStore}>
-          <Sidebar/>
-          <Renderer/>
+          <Sidebar />
+          <Renderer />
         </Provider>
       </header>
     </div>

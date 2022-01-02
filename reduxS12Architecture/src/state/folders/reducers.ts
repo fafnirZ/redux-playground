@@ -5,6 +5,9 @@ export const addFolderItems = (state: sliceState, action:PayloadAction<Folder>) 
   const newFolder: Folder = action.payload;
   return {
     ...state,
-    newFolder
+    items: [
+      ...state.items,
+      newFolder
+    ]
   }
 }

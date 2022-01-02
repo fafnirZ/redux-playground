@@ -13,9 +13,9 @@ function Renderer({}: Props): ReactElement {
     folderSelector.getFolderState(state),
   )
 
-  useEffect(() => {
-    console.log(folders);
-  }, [folders])
+  // useEffect(() => {
+  //   console.log(folders);
+  // }, [folders])
 
   
   return (

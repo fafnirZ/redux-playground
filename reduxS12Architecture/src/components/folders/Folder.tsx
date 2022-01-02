@@ -8,7 +8,7 @@ const FolderWrapper = styled.div`
   width: 150px;
   height: 200px;
   background: white;
-  
+  margin: 100px;
 `
 
 export default function Folder({}: Props) {
