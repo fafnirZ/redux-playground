@@ -14,7 +14,7 @@ const sagaMiddleware = createSagaMiddleware();
 function* getSagas() {
   yield all([
     call(foldersSaga.rootFolderSaga),
-    call(foldersSaga.rootFolderSaga2)
+    // call(foldersSaga.rootFolderSaga2)
   ])
 }
 

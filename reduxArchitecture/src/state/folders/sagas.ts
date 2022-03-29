@@ -14,9 +14,9 @@ export function* rootFolderSaga() {
   // add more takeEvery for parallel watchers
 }
 
-export function* rootFolderSaga2() {
-  yield takeEvery(addFolderItemAction, addFolderItem);
-  // add more takeEvery for parallel watchers
-}
+// export function* rootFolderSaga2() {
+//   yield takeEvery(addFolderItemAction, addFolderItem);
+//   // add more takeEvery for parallel watchers
+// }
 
 
