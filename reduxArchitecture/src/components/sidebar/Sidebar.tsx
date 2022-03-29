@@ -11,7 +11,9 @@ function Sidebar({}: Props): ReactElement {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div style={{
+      background: "grey"
+    }}>
       <button onClick={()=> {
         dispatch(
           folderAct.addFolderItemAction({
